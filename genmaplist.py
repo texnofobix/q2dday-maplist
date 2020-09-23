@@ -36,9 +36,9 @@ for file in os.listdir(location_maps):
     basefile=(file.split('.'))[0]
 
     if os.path.isfile(location_navs + '/' + basefile + '.nav'):
-        print('<li class="list-group-item">' + file + '</li>' )
+        print('<li class="list-group-item" id="' + file + '">' + file + '  - .nat exists</li>' )
     else:
-        print('<li class="list-group-item">' + file +  "- nav exists </li>")
+        print('<li class="list-group-item" id="' + file + '">' + file +  "</li>")
 
 
 print('</ul>')
